@@ -1,0 +1,21 @@
+[book]
+authors = ["Wilfrid E. Reeve"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Interlingue for Beginners"
+description = "Interlingue course for English speakers."
+
+[output.html]
+theme = "src/theme"
+default-theme = "light"
+preferred-dark-theme = "coal"
+git-repository-url = "https://github.com/occidental-lang/interlingue-for-beginners"
+site-url = "/interlingue-for-beginners/"
+
+[output.html.fold]
+enable = true
+level = 0
+
+[build]
+build-dir = "docs"

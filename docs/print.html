@@ -1,0 +1,362 @@
+<!DOCTYPE HTML>
+<html lang="en" class="sidebar-visible no-js light">
+    <head>
+        <!-- Book generated using mdBook -->
+        <meta charset="UTF-8">
+        <title>Interlingue for Beginners</title>
+        
+        <meta name="robots" content="noindex" />
+        
+        
+
+
+        <!-- Custom HTML head -->
+        
+
+
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="Interlingue course for English speakers.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="theme-color" content="#ffffff" />
+
+        
+        <link rel="icon" href="favicon.svg">
+        
+        
+        <link rel="shortcut icon" href="favicon.png">
+        
+        <link rel="stylesheet" href="css/variables.css">
+        <link rel="stylesheet" href="css/general.css">
+        <link rel="stylesheet" href="css/chrome.css">
+        <link rel="stylesheet" href="css/print.css" media="print">
+
+        <!-- Fonts -->
+        <link rel="stylesheet" href="FontAwesome/css/font-awesome.css">
+        
+        <link rel="stylesheet" href="fonts/fonts.css">
+        
+        <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Roboto&display=swap" rel="stylesheet">
+        <!-- Highlight.js Stylesheets -->
+        <link rel="stylesheet" href="highlight.css">
+        <link rel="stylesheet" href="tomorrow-night.css">
+        <link rel="stylesheet" href="ayu-highlight.css">
+
+        <!-- Custom theme stylesheets -->
+        
+
+        
+    </head>
+    <body>
+
+        <!-- Provide site root to javascript -->
+        <script type="text/javascript">
+            var path_to_root = "";
+            var default_theme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "coal" : "light";
+        </script>
+
+        <!-- Work around some values being stored in localStorage wrapped in quotes -->
+        <script type="text/javascript">
+            try {
+                var theme = localStorage.getItem('mdbook-theme');
+                var sidebar = localStorage.getItem('mdbook-sidebar');
+
+                if (theme.startsWith('"') && theme.endsWith('"')) {
+                    localStorage.setItem('mdbook-theme', theme.slice(1, theme.length - 1));
+                }
+
+                if (sidebar.startsWith('"') && sidebar.endsWith('"')) {
+                    localStorage.setItem('mdbook-sidebar', sidebar.slice(1, sidebar.length - 1));
+                }
+            } catch (e) { }
+        </script>
+
+        <!-- Set the theme before any content is loaded, prevents flash -->
+        <script type="text/javascript">
+            var theme;
+            try { theme = localStorage.getItem('mdbook-theme'); } catch(e) { }
+            if (theme === null || theme === undefined) { theme = default_theme; }
+            var html = document.querySelector('html');
+            html.classList.remove('no-js')
+            html.classList.remove('light')
+            html.classList.add(theme);
+            html.classList.add('js');
+        </script>
+
+        <!-- Hide / unhide sidebar before it is displayed -->
+        <script type="text/javascript">
+            var html = document.querySelector('html');
+            var sidebar = 'hidden';
+            if (document.body.clientWidth >= 1080) {
+                try { sidebar = localStorage.getItem('mdbook-sidebar'); } catch(e) { }
+                sidebar = sidebar || 'visible';
+            }
+            html.classList.remove('sidebar-visible');
+            html.classList.add("sidebar-" + sidebar);
+        </script>
+
+        <nav id="sidebar" class="sidebar" aria-label="Table of contents">
+            <div class="sidebar-scrollbox">
+                <ol class="chapter"><li class="chapter-item affix "><a href="index.html">Interlingue for Beginners</a></li><li class="chapter-item "><a href="1.html"><strong aria-hidden="true">1.</strong> Lesson 1</a></li><li class="chapter-item "><a href="2.html"><strong aria-hidden="true">2.</strong> Lesson 2</a></li></ol>
+            </div>
+            <div id="sidebar-resize-handle" class="sidebar-resize-handle"></div>
+        </nav>
+
+        <div id="page-wrapper" class="page-wrapper">
+
+            <div class="page">
+                
+                <div id="menu-bar-hover-placeholder"></div>
+                <div id="menu-bar" class="menu-bar sticky bordered">
+                    <div class="left-buttons">
+                        <button id="sidebar-toggle" class="icon-button" type="button" title="Toggle Table of Contents" aria-label="Toggle Table of Contents" aria-controls="sidebar">
+                            <i class="fa fa-bars"></i>
+                        </button>
+                        <button id="theme-toggle" class="icon-button" type="button" title="Change theme" aria-label="Change theme" aria-haspopup="true" aria-expanded="false" aria-controls="theme-list">
+                            <i class="fa fa-paint-brush"></i>
+                        </button>
+                        <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
+                            <li role="none"><button role="menuitem" class="theme" id="light">Light (default)</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="rust">Rust</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="coal">Coal</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="navy">Navy</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="ayu">Ayu</button></li>
+                        </ul>
+                        
+                        <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        
+                    </div>
+
+                    <h1 class="menu-title">Interlingue for Beginners</h1>
+
+                    <div class="right-buttons">
+                        <a href="print.html" title="Print this book" aria-label="Print this book">
+                            <i id="print-button" class="fa fa-print"></i>
+                        </a>
+                        
+                        <a href="https://github.com/occidental-lang/interlingue-for-beginners" title="Git repository" aria-label="Git repository">
+                            <i id="git-repository-button" class="fa fa-github"></i>
+                        </a>
+                        
+                    </div>
+                </div>
+
+                
+                <div id="search-wrapper" class="hidden">
+                    <form id="searchbar-outer" class="searchbar-outer">
+                        <input type="search" name="search" id="searchbar" name="searchbar" placeholder="Search this book ..." aria-controls="searchresults-outer" aria-describedby="searchresults-header">
+                    </form>
+                    <div id="searchresults-outer" class="searchresults-outer hidden">
+                        <div id="searchresults-header" class="searchresults-header"></div>
+                        <ul id="searchresults">
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <!-- Apply ARIA attributes after the sidebar and the sidebar toggle button are added to the DOM -->
+                <script type="text/javascript">
+                    document.getElementById('sidebar-toggle').setAttribute('aria-expanded', sidebar === 'visible');
+                    document.getElementById('sidebar').setAttribute('aria-hidden', sidebar !== 'visible');
+                    Array.from(document.querySelectorAll('#sidebar a')).forEach(function(link) {
+                        link.setAttribute('tabIndex', sidebar === 'visible' ? 0 : -1);
+                    });
+                </script>
+
+                <div id="content" class="content">
+                    <main>
+                        <p style="text-align:center;"><img src="cover.png"></p>
+<h1><a class="header" href="#interlingue-for-beginners" id="interlingue-for-beginners">INTERLINGUE FOR BEGINNERS</a></h1>
+<p style="text-align:center;">By Wilfrid E. Reeve</p>
+<p style="text-align:center;">Editoria : Interlingue-Institute</p>
+<p style="text-align:center;">CH-1033 CHESEAUX SVISSIA</p>
+<hr />
+<p style="text-align:center;">1966</p><h1><a class="header" href="#lesson-1" id="lesson-1">Lesson 1</a></h1>
+<ol>
+<li>
+<p>Interlingue is phonetic, that is to say, after studying the few rules of pronunciation given below you can read any text without difficulty. At the same time these rules allow us to write the words in a recognizable way.</p>
+</li>
+<li>
+<p>The following consonants are pronounced just as in English -- b d f h k l m n p r t v w y. The letter &quot;r&quot; should however be trilled and must always be pronounced.</p>
+</li>
+<li>
+<p>The letters &quot;c&quot; and &quot;g&quot; have two sounds. Before &quot;e&quot; and &quot;i&quot;, &quot;c&quot; is &quot;ts&quot;, elsewhere &quot;k&quot;. Before &quot;e&quot; and &quot;i&quot;, &quot;g&quot; is pronounced as in the middle of our word &quot;vision&quot; ; elsewhere as in &quot;go&quot; ; &quot;j&quot; is also as in &quot;vision&quot;.</p>
+</li>
+<li>
+<p>&quot;Qu&quot; is always &quot;koo&quot; ; &quot;z&quot; is &quot;dz&quot; ; &quot;zz&quot; is &quot;ts&quot; and &quot;x&quot; is &quot;ks&quot; ; &quot;ch&quot; and &quot;sh&quot; are as English &quot;sh&quot;. The letter &quot;s&quot; between two vowels is like our &quot;z&quot;, elsewhere as in &quot;say&quot;. In order to preserve this sharp sound between two vowels we double the &quot;s&quot;, e.g., &quot;possibil&quot;.</p>
+</li>
+<li>
+<p>At the end of words in the combinations &quot;tia&quot;, &quot;tie&quot;, &quot;tion&quot; the &quot;t&quot; sound is followed by &quot;s&quot;, e.g., &quot;national&quot; (natseeonahl) unless an &quot;s&quot; precedes, e.g. &quot;question&quot;.</p>
+</li>
+<li>
+<p>Each vowel has two sounds, a short and a long. These are heard in the following series: &quot;pat&quot;, &quot;pet&quot;, &quot;pit&quot;, &quot;pot&quot;, &quot;put&quot; and &quot;barn&quot;, &quot;bane&quot;, &quot;bean&quot;, &quot;bone&quot;, &quot;boon&quot;. There are in Interlingue the following diphthongs: &quot;au&quot; (as in &quot;cows&quot;), &quot;ay&quot; (as in &quot;high&quot;), and &quot;ey&quot; (as in &quot;they&quot;). Other combinations of vowels must be pronounced separately.</p>
+</li>
+<li>
+<p>Vowels are short in unstressed syllables and when followed by two consonants. All other vowels are long ; if however the second consonant is &quot;r&quot; or &quot;l&quot; a preceding stressed vowel is long. Hence the first vowels in these words are long : -- &quot;pur&quot;, &quot;robe&quot;, &quot;blu&quot;, &quot;fibre&quot;, &quot;table&quot; and short in these : -- &quot;calm&quot;, &quot;old&quot;, &quot;potte&quot;, &quot;flagga&quot;.</p>
+</li>
+<li>
+<p>The stress is on the vowel preceding the last consonant. The endings &quot;-bil&quot;, &quot;-ic&quot;, &quot;-im&quot;, &quot;-ul&quot;, &quot;-um&quot;, &quot;-men&quot; and the plural &quot;-es&quot; however do not take a stress. Unusual stresses are marked, e.g., &quot;societé&quot;, &quot;armé&quot;.</p>
+</li>
+<li>
+<p>Read these words carefully after studying the above mentioned rules. Most of the words in this lesson will be known to you from their similarity to English : --</p>
+<p>special (spehtseeAhl), musica (mOOzica), long, militari, normal, present, rigid, station, stomac, organisation, papere, parte, expert, impulse, lettre, machine, metalle, agreabil, dangere.</p>
+<p>Do not forget to sound the final &quot;e&quot;.</p>
+</li>
+<li>
+<p>Vocabulary.</p>
+</li>
+</ol>
+<table><thead><tr><th>Ie</th><th>En</th></tr></thead><tbody>
+<tr><td>li</td><td>the</td></tr>
+<tr><td>un</td><td>a</td></tr>
+<tr><td>es</td><td>is, are</td></tr>
+<tr><td>de</td><td>of, from</td></tr>
+<tr><td>lune</td><td>moon</td></tr>
+<tr><td>blanc</td><td>white</td></tr>
+<tr><td>bocca</td><td>mouth</td></tr>
+<tr><td>apert</td><td>open</td></tr>
+<tr><td>tren</td><td>train</td></tr>
+<tr><td>leer</td><td>to read</td></tr>
+<tr><td>dulci</td><td>sweet</td></tr>
+</tbody></table>
+<ol start="11">
+<li>
+<p>&quot;De li&quot; and &quot;a li&quot; are usually abbreviated to &quot;del and &quot;al&quot;, e.g.</p>
+<p>Li patre del púer vadet al dom (The boy's father went to the house).</p>
+<p>Note how we express the possessive by the use of &quot;del&quot;.</p>
+</li>
+<li>
+<p>Read aloud and translate.</p>
+<p>Li lune es blanc. Li bocca del mann es apert. Un electric tren es rapid. Leer us un plesura. Un fertil region. Libertá es dulci. Li actressa es famosi.</p>
+</li>
+</ol>
+<h1><a class="header" href="#lesson-2" id="lesson-2">Lesson 2</a></h1>
+<ol>
+<li>
+<p>Nouns that end in a vowel add &quot;s&quot; to form the plural, those that end in a consonant add &quot;-es&quot;. Long words in &quot;-ium&quot; add &quot;-s&quot;.</p>
+<p>Li serpente, li seprentes. Li structura, Li structuras. Li circul, li circules. Li person, li persones. Li vocabularium, li vocabulariums.</p>
+</li>
+<li>
+<p>There is one exception to the rule given above. Words in &quot;-c&quot; and &quot;-g&quot; add only &quot;-s&quot; in order to preserve the hard sounds.</p>
+<p>Li plug (plough), li plugs. Li flanc (side), li flancs.</p>
+</li>
+<li>
+<p>Adjectives normally come before the noun but they can be placed after if so desired.</p>
+<p>Un nigri cate (a black cat).
+Un lingue universal (a universal langauge).
+Li table es solid.</p>
+</li>
+<li>
+<p>It is sometimes necessary for euphonic reasons to add a vowel at the end of a root. We can us &quot;-e&quot; for general purposes. This is usually regarded as more specifically applicable to nouns ; for adjectives we add &quot;-i&quot; (compare English &quot;easy&quot;, &quot;stringy&quot;). these endings are frequently optional though there is a tendency to standardisation. In some cases the endings are really necessary.</p>
+<p>Un povri fémina (a poor woman).
+Li nocte es obscur (the night is dark).
+Harmonie es un facte.</p>
+</li>
+<li>
+<p>Adjectives, of course, do not normally take the plural &quot;-s&quot; unless they are used without nouns.</p>
+<p>Maria have li verdis e Rosa have li bluis (Mary has the green ones and Rose has the blue ones).</p>
+</li>
+<li>
+<p>Adverbs are formed from adjectives by the addition of the suffix &quot;-men&quot; ; the final &quot;-i&quot; can be retained if it helps the pronunciation.</p>
+<p>Nationalmen (nationally), rigidmen (rigidly).</p>
+<p>In many cases however the adjective itself can be used.</p>
+<p>Li fémina lude bon (or bonmen), (the woman plays well)</p>
+</li>
+<li>
+<p>Vocabulary.</p>
+</li>
+</ol>
+<table><thead><tr><th>Ie</th><th>En</th></tr></thead><tbody>
+<tr><td>bell</td><td>beautiful</td></tr>
+<tr><td>grand</td><td>big</td></tr>
+<tr><td>mult</td><td>much, many</td></tr>
+<tr><td>flore</td><td>flower</td></tr>
+<tr><td>porta</td><td>wears</td></tr>
+<tr><td>puella</td><td>girl</td></tr>
+<tr><td>strade</td><td>street</td></tr>
+<tr><td>vade</td><td>go, goes</td></tr>
+<tr><td>atacca</td><td>attacks</td></tr>
+</tbody></table>
+<ol start="8">
+<li>
+<p>Exercise.</p>
+<p>Li tigre atacca violentmen. Li puella vade delicatmen along li strade. Li dictionariums es important. Li fémina porta un gay blu robe. Li mann have mult moné. Bell flores es un grand plesura.</p>
+</li>
+</ol>
+
+                    </main>
+
+                    <nav class="nav-wrapper" aria-label="Page navigation">
+                        <!-- Mobile navigation buttons -->
+                        
+
+                        
+
+                        <div style="clear: both"></div>
+                    </nav>
+                </div>
+            </div>
+
+            <nav class="nav-wide-wrapper" aria-label="Page navigation">
+                
+
+                
+            </nav>
+
+        </div>
+
+        
+        <!-- Livereload script (if served using the cli tool) -->
+        <script type="text/javascript">
+            var socket = new WebSocket("ws://localhost:3000/__livereload");
+            socket.onmessage = function (event) {
+                if (event.data === "reload") {
+                    socket.close();
+                    location.reload();
+                }
+            };
+
+            window.onbeforeunload = function() {
+                socket.close();
+            }
+        </script>
+        
+
+        
+
+        
+
+        
+        <script type="text/javascript">
+            window.playground_copyable = true;
+        </script>
+        
+
+        
+
+        
+        <script src="elasticlunr.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="mark.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="searcher.js" type="text/javascript" charset="utf-8"></script>
+        
+
+        <script src="clipboard.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="highlight.js" type="text/javascript" charset="utf-8"></script>
+        <script src="book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
+        
+
+        
+        
+        <script type="text/javascript">
+        window.addEventListener('load', function() {
+            window.setTimeout(window.print, 100);
+        });
+        </script>
+        
+        
+
+    </body>
+</html>
