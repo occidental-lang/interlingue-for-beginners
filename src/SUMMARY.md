@@ -2,5 +2,7 @@
 
 [Interlingue for Beginners](README.md)
 
-- [Lesson 1](./1.md)
-- [Lesson 2](./2.md)
+- [Pronunciation](./1.md)
+- [Nouns, Adjectives, Adverbs](./2.md)
+- [Pronouns](./3.md)
+- [Verbs](./4.md)
