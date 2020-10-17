@@ -12,6 +12,7 @@ default-theme = "light"
 preferred-dark-theme = "coal"
 git-repository-url = "https://github.com/occidental-lang/interlingue-for-beginners"
 site-url = "/interlingue-for-beginners/"
+google-analytics = "UA-151655688-1"
 
 [output.html.fold]
 enable = true
